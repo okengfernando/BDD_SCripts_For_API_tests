@@ -11,6 +11,10 @@ pm.test("Batch Validation of JSON output", function () {
     pm.expect(parsedData.data.email).to.eql("janet.weaver@reqres.in");
     pm.expect(parsedData.data.first_name).to.eql("Janet");
     pm.expect(parsedData.data.last_name).to.eql("Weaver");
+    pm.expect(parsedData.data.age).to.eql(27);
+    pm.expect(parsedData.data.account).to.eql("04230647978");
+    pm.expect(parsedData.data.address).to.eql("Central")
+
 });
 
 //handling responses that cant be parsed in JSON
