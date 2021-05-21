@@ -47,3 +47,5 @@ pm.test("Cookie value Check", function () {
 pm.test("response Time less than 20ms", function () {
     pm.expect(pm.response.responseTime).to.be.below(290);
 });
+
+//git push https://github.com/okengfernando/BDD_SCripts_For_API_tests.git
