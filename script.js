@@ -52,3 +52,7 @@ pm.test("response Time less than 20ms", function () {
     pm.expect(pm.response.responseTime).to.be.below(290);
 });
 
+//check response Time
+pm.test("response Time less than 20ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(30);
+});
