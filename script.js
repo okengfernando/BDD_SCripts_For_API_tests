@@ -1,3 +1,5 @@
+console.log("initializing...")
+
 //status code checker with chai BDD
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
@@ -56,3 +58,5 @@ pm.test("response Time less than 20ms", function () {
 pm.test("response Time less than 20ms", function () {
     pm.expect(pm.response.responseTime).to.be.below(30);
 });
+
+
